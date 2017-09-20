@@ -1,0 +1,394 @@
+<html>
+<head><title>LAB 10</title></head>
+<body style="background-color:rgb(120,39,123)">
+
+<table>
+<tr>
+<td>
+<p>
+<img id="1" src="b.png" height="120" width="90" onclick="turnQ(&quot;a.png&quot;, 1)"></img>
+<img id="2" src="b.png" height="120" width="90" onclick="turnQ(&quot;2.png&quot;, 2)"></img>
+<img id="3" src="b.png" height="120" width="90" onclick="turnQ(&quot;3.png&quot;, 3)"></img>
+<img id="4" src="b.png" height="120" width="90" onclick="turnQ(&quot;4.png&quot;, 4)"></img>
+</p>
+<p>
+<img id="5" src="b.png" height="120" width="90" onclick="turnQ(&quot;5.png&quot;, 5)"></img>
+<img id="6" src="b.png" height="120" width="90" onclick="turnQ(&quot;6.png&quot;, 6)"></img>
+<img id="7" src="b.png" height="120" width="90" onclick="turnQ(&quot;7.png&quot;, 7)"></img>
+<img id="8" src="b.png" height="120" width="90" onclick="turnQ(&quot;8.png&quot;, 8)"></img>
+</p>
+<p>
+<img id="11" src="b.png" height="120" width="90" onclick="turnS(&quot;a.png&quot;, 11)"></img>
+<img id="22" src="b.png" height="120" width="90" onclick="turnS(&quot;2.png&quot;, 22)"></img>
+<img id="33" src="b.png" height="120" width="90" onclick="turnS(&quot;3.png&quot;, 33)"></img>
+<img id="44" src="b.png" height="120" width="90" onclick="turnS(&quot;4.png&quot;, 44)"></img>
+</p>
+<p>
+<img id="55" src="b.png" height="120" width="90" onclick="turnS(&quot;5.png&quot;, 55)"></img>
+<img id="66" src="b.png" height="120" width="90" onclick="turnS(&quot;6.png&quot;, 66)"></img>
+<img id="77" src="b.png" height="120" width="90" onclick="turnS(&quot;7.png&quot;, 77)"></img>
+<img id="88" src="b.png" height="120" width="90" onclick="turnS(&quot;8.png&quot;, 88)"></img>
+</p>
+</td>
+<td id="t2">
+<h1 style="margin:3cm">LAB 10 <sub>GAme</sub></h1>
+<h1 style="margin:3cm"><i><strong>Game To Be Conquered...</strong></i></h1>
+</td>
+</tr>
+</table>
+</body>
+<script language="javascript">
+var count= 0;
+var count1=0;
+var count2=0;
+var count3=0;
+var count4=0;
+var countCheck=0;
+var count1Check=0;
+var i=1;
+var checkCount = 0;
+var checkCount1 = 0;
+
+
+function turnQ(imgName, id)
+{
+	document.getElementById(id).src = imgName;
+	count=id;
+	count2++;
+	console.log(count);
+	if(count2 == 1)
+	{
+		count3 = count;
+		//count4 = count1;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+}
+function turnS(imgName, id)
+{
+	document.getElementById(id).src = imgName;
+	count1=id;
+	count2++;
+	console.log(count);
+	if(count2 == 1)
+	{
+		//count3 = count;
+		count4 = count1;
+	}
+	//console.log(count3);
+	//console.log(count);
+	count1Check++;
+	setTimeout(condition,1000);
+}
+
+
+
+/*function turnA()
+{
+	document.getElementById("1").src = "a.png";
+	count=1;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+}
+
+function turn2()
+{
+	document.getElementById("2").src = "2.png";
+	count=2;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn3()
+{
+	document.getElementById("3").src = "3.png";
+	count=3;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn4()
+{
+	document.getElementById("4").src = "4.png";
+	count=4;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn5()
+{
+	document.getElementById("5").src = "5.png";
+	count=5;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn6()
+{
+	document.getElementById("6").src = "6.png";
+	count=6;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn7()
+{
+	document.getElementById("7").src = "7.png";
+	count=7;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn8()
+{
+	document.getElementById("8").src = "8.png";
+	count=8;
+	count2++;
+	if(count2 == 1)
+	{
+		count3 = count;
+	}
+	//console.log(count3);
+	//console.log(count);
+	countCheck++;
+	setTimeout(condition,1000);
+
+}
+function turn11()
+{
+	document.getElementById("11").src = "a.png";
+	count1=11;
+	count2++;
+	if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+}
+function turn22()
+{
+	document.getElementById("22").src = "2.png";
+	count1=22;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+
+}
+function turn33()
+{
+	document.getElementById("33").src = "3.png";
+	count1=33;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+
+}
+function turn44()
+{
+	document.getElementById("44").src = "4.png";
+	count1=44;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+
+}
+
+function turn55()
+{
+	document.getElementById("55").src = "5.png";
+	count1=55;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+
+}
+
+function turn66()
+{
+	document.getElementById("66").src = "6.png";
+	count1=66;
+	count2++;
+	if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+}
+
+function turn77()
+{
+	document.getElementById("77").src = "7.png";
+	count1=77;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	//console.log(count4);
+	//console.log(count1);
+	count1Check++;
+	setTimeout(condition,1000);
+
+}
+
+function turn88()
+{
+	document.getElementById("88").src = "8.png";
+	count1=88;
+	count2++;
+		if(count2 == 1)
+	{
+		count4 = count1;
+	}
+	count1Check++;
+	setTimeout(condition,1000);
+
+}*/
+
+function condition()
+{
+	if(count2 == 2)
+	{
+		if((count*11)==count1)
+		{
+			var wr = document.getElementById("t2").innerHTML = document.getElementById("t2").innerHTML + "Match" + " " +i + " " +"found" +"--- ," ;
+			i++;
+			var a = document.getElementById(count);
+			var b = document.getElementById(count1);
+			count = 0;
+			count1 = 0;
+			countCheck = 0;
+			count1Check = 0;
+			a.removeAttribute("onclick");
+			b.removeAttribute("onclick");
+		}
+		else
+		{
+				if(countCheck==2)
+				{
+					document.getElementById(count).src="b.png";
+					document.getElementById(count3).src="b.png";
+					countCheck=0;
+					count1Check=0;
+					count = 0;
+					count3 = 0;
+					var c = 5;
+					console.log(c);
+				}
+				else if(count1Check==2)
+				{
+					//console.log(countCheck1);
+					document.getElementById(count1).src="b.png";
+					document.getElementById(count4).src="b.png";
+					count1 = 0;
+					count4 = 0;
+					var c = 6;
+					console.log(c);
+					count1Check=0;
+					countCheck=0;
+				}
+				else
+				{
+					console.log(count1Check);
+					document.getElementById(count).src="b.png";
+					document.getElementById(count1).src="b.png";
+					countCheck = 0;
+					count1Check = 0;
+					count = 0;
+					count1 = 0;
+					var c = 7;
+					console.log(c);
+				}
+		}
+		count2=0;
+	}
+	/*if(i==9)
+	{
+		var tt = document.getElementById("t2");
+		tt.innerHTML = " "+"     " + "YOU WON" ;
+		
+	}*/
+}
+</script>
+</html>
