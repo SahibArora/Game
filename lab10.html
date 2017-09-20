@@ -50,7 +50,7 @@ var checkCount = 0;
 var checkCount1 = 0;
 
 
-function turnQ(imgName, id)
+function turnQ(imgName, id)                          // this function flips the card record its Id and sets a time out for 1 sec.
 {
 	document.getElementById(id).src = imgName;
 	count=id;
@@ -66,7 +66,7 @@ function turnQ(imgName, id)
 	countCheck++;
 	setTimeout(condition,1000);
 }
-function turnS(imgName, id)
+function turnS(imgName, id)                      // this function also flips the card when it is clicked and records the id of the card and sets timeout for 1 sec
 {
 	document.getElementById(id).src = imgName;
 	count1=id;
@@ -83,8 +83,8 @@ function turnS(imgName, id)
 	setTimeout(condition,1000);
 }
 
-function condition()
-{
+function condition()         // this function checks various conditions including the bases of our game (if the two choosen cards have the same number or not)
+{ 
 	if(count2 == 2)
 	{
 		if((count*11)==count1)
